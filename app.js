@@ -15,7 +15,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://"+process.env.MONGODB_USERNAME+":"+process.env.MONGODB_PASSWORD+"@cluster0.u41a6.mongodb.net/blogDB", {useNewUrlParser: true});
+//mongoose.connect("mongodb+srv://"+process.env.MONGODB_USERNAME+":"+process.env.MONGODB_PASSWORD+"@cluster0.u41a6.mongodb.net/blogDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://aditigosain:googleplus@cluster0.u41a6.mongodb.net/blogDB", {useNewUrlParser: true});
 
 const postSchema = {
   title: String,
